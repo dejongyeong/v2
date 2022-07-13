@@ -1,10 +1,16 @@
-# Portfolio V2
+# Web Portfolio - V2
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## **Getting Started**
 
 First, run the development server:
+
+```bash
+npm install
+# or
+yarn install
+```
 
 ```bash
 npm run dev
@@ -71,3 +77,35 @@ Tutorial:
 - Marcos Henrique da Silva - [Your scaffold for CircleCI + Automated Tests + NestJS](https://makinhs.medium.com/your-scaffold-for-circleci-automated-tests-nestjs-a64f028cdd3d)
 - Calvin Cheng - [Gist: Example deploy using vercel token](https://gist.github.com/calvinchengx/e1b1ab6388cec4f26192414dd9ed7af4)
 - Vercel - [What's the correct way to deploy from another CI system such as circle ci?](https://github.com/vercel/vercel/discussions/7849)
+
+### **_Vercel Configuration in CircleCI Config_**
+
+**Pre-requisite**: Connect your repository to Vercel through Vercel dashboard
+\
+\
+Install Vercel CLI:
+
+```bash
+npm install -g vercel
+```
+
+Retrieve `VERCEL_PROJECT_ID` and `VERCEL_ORG_ID`: \
+It should generate a `.vercel` folder and the tokens can be found in the `project.json` file.
+
+```bash
+vercel link
+```
+
+Create environment variables in **Circle CI** project settings:
+
+```
+VERCEL_PROJECT_ID: [projId in [path]/vercel/project.json]
+```
+
+```
+VERCEL_ORG_ID: [orgId in [path]/vercel/project.json]
+```
+
+```
+VERCEL_ACCESS_TOKEN: [generate through vercel account settings]
+```
