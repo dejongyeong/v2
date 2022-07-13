@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## **Prettier, ESLint, Husky, Lint-Staged Setup**
 
-Enforce code style and maintain code quality.
+Enforce code style and maintain code quality - "Fail Fast and Early"
 
 Tutorial:
 
@@ -54,3 +54,4 @@ Tutorial:
 - Vercel - [Next.js Testing documentation](https://nextjs.org/docs/testing#jest-and-react-testing-library)
 - Maciek Grzybek - [Setup Next.js with Typescript , Jest and React Testing Library](https://dev.to/maciekgrzybek/setup-next-js-with-typescript-jest-and-react-testing-library-28g5)
 - Mateusz Hadryś - [Boilerplate and Starter for Next JS 12+, Tailwind CSS 3 and TypeScript](https://github.com/hadrysm/nextjs-boilerplate)
+- Harsh Verma - [Automated Code Linting and Testing](https://medium.com/@harshverma04111989/automated-code-linting-and-testing-a3fb0416756c)
