@@ -71,6 +71,8 @@
       {
         "namedComponents": "arrow-function"
       }
-    ]
+    ],
+    // allow imports from dev-dependencies
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   }
 }

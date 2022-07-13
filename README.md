@@ -44,3 +44,13 @@ Tutorial:
 - **Jarrod Watts** - [How To Setup Next.JS with TypeScript, Prettier, ESLint and Husky](https://www.youtube.com/watch?v=sH93pQb9bWM&ab_channel=JarrodWatts)
 - **Joshchu** - [How to setup Prettier, ESLint, Husky and Lint-Staged with a NextJS and Typescript Project](https://dev.to/joshchu/how-to-setup-prettier-eslint-husky-and-lint-staged-with-a-nextjs-and-typescript-project-i7b)
 - **Alexandre C.** - [Improve your Next.js 11+ project code quality with Typescript, Eslint, Husky, and Lint-staged](https://dev.to/alexcoding42/set-up-typescript-eslint-husky-and-lint-staged-in-a-next-js-11-project-5g5j)
+
+## **Jest and React Testing Library Setup**
+
+Unit testing
+
+Tutorial:
+
+- Vercel - [Next.js Testing documentation](https://nextjs.org/docs/testing#jest-and-react-testing-library)
+- Maciek Grzybek - [Setup Next.js with Typescript , Jest and React Testing Library](https://dev.to/maciekgrzybek/setup-next-js-with-typescript-jest-and-react-testing-library-28g5)
+- Mateusz Hadryś - [Boilerplate and Starter for Next JS 12+, Tailwind CSS 3 and TypeScript](https://github.com/hadrysm/nextjs-boilerplate)
