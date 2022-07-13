@@ -10,6 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
+    "test:staged": "jest --bail --findRelatedTests",
     "test:watch": "jest --watch",
     "prepare": "husky install"
   },

@@ -4,11 +4,11 @@
 # Reference: https://github.com/jarrodwatts/code-like-google
 echo '🏗️👷 Styling and linting  your project before committing'
 
-# Check Prettier standards
+# Check Prettier, ESLint, and Testing standards
 npx lint-staged  ||
 (
-    echo '❌❌❌❌❌ Failed ESLint and Prettier. ❌❌❌❌❌
-            Prettier and ESLint Check Failed. Make the required changes listed above, add changes and try commit again.';
+    echo '❌❌❌❌❌ Failed ESLint, Prettier and Testing. ❌❌❌❌❌
+            Prettier, ESLint, and Testing Check Failed. Make the required changes listed above, add changes and try commit again.';
     false;
 )
 
