@@ -55,3 +55,17 @@ Tutorial:
 - Maciek Grzybek - [Setup Next.js with Typescript , Jest and React Testing Library](https://dev.to/maciekgrzybek/setup-next-js-with-typescript-jest-and-react-testing-library-28g5)
 - Mateusz Hadryś - [Boilerplate and Starter for Next JS 12+, Tailwind CSS 3 and TypeScript](https://github.com/hadrysm/nextjs-boilerplate)
 - Harsh Verma - [Automated Code Linting and Testing](https://medium.com/@harshverma04111989/automated-code-linting-and-testing-a3fb0416756c)
+
+## **Integrating CircleCI for Continuous Integration**
+
+Automate builds and tests - DevOps software development practice
+
+Tutorial:
+
+- Fikayo Adepoju - [Continuous integration for Next.js applications](https://circleci.com/blog/next-testing/?utm_source=google&utm_medium=sem&utm_campaign=sem-google-dg--emea-en-dsa-maxConv-auth-brand&utm_term=g_-_c__dsa_&utm_content=&gclid=CjwKCAjwt7SWBhAnEiwAx8ZLaqjakbuvDUxIKNmFmtPM4sUDbMxjli9VN5EysDOhgC3yXQ9Nd99LFBoCciEQAvD_BwE)
+- CircleCI - [Configuring a Node.js Application on CircleCI](https://circleci.com/docs/language-javascript)
+- David Adeneye - [A guide to continuous integration in Next.js](https://birdeatsbug.com/blog/a-guide-to-continuous-integration-in-next-js)
+- CircleCI - [Using the Docker execution environment](https://circleci.com/docs/using-docker)
+- Vercel - [Continuous Integration (CI) Build Caching](https://nextjs.org/docs/advanced-features/ci-build-caching)
+- Fikayo Adepoju - [Continuous deployment for Next.js applications](https://circleci.com/blog/continuous-deployment-for-next-js-apps/)
+- Marcos Henrique da Silva - [Your scaffold for CircleCI + Automated Tests + NestJS](https://makinhs.medium.com/your-scaffold-for-circleci-automated-tests-nestjs-a64f028cdd3d)

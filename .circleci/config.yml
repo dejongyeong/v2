@@ -1,0 +1,45 @@
+# .circleci/config.yml
+
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.2
+
+jobs:
+  build-and-test:
+    docker:
+      - image: cimg/node:16.16.0-browsers
+    working_directory: ~/src
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependency-cache-{{ checksum "package-lock.json" }}
+            # fallback to use the latest cache
+            - v1-dependency-cache-
+
+      - run:
+          name: 🏗️🏗️🏗️ install dependencies 🏗️🏗️🏗️
+          command: npm install
+
+      - save_cache:
+          paths:
+            - ./node_modules
+            - ./.next/cache
+          key: v1-dependency-cache-{{ checksum "package-lock.json" }}
+
+      - run:
+          name: 🤡🤡🤡 run tests 🤡🤡🤡
+          command: npm run test
+
+      - run:
+          name: 🔨🔨🔨 build application 🔨🔨🔨
+          command: npm run build
+
+# https://circleci.com/docs/configuration-reference#workflows
+workflows:
+  build-workflow:
+    jobs:
+      - build-and-test
