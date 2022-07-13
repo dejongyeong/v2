@@ -56,9 +56,9 @@ Tutorial:
 - Mateusz Hadryś - [Boilerplate and Starter for Next JS 12+, Tailwind CSS 3 and TypeScript](https://github.com/hadrysm/nextjs-boilerplate)
 - Harsh Verma - [Automated Code Linting and Testing](https://medium.com/@harshverma04111989/automated-code-linting-and-testing-a3fb0416756c)
 
-## **Integrating CircleCI for Continuous Integration**
+## **Integrating CircleCI and Vercel for CI/CD**
 
-Automate builds and tests - DevOps software development practice
+Automate builds, tests, and deployments - DevOps software development practice
 
 Tutorial:
 
@@ -69,3 +69,5 @@ Tutorial:
 - Vercel - [Continuous Integration (CI) Build Caching](https://nextjs.org/docs/advanced-features/ci-build-caching)
 - Fikayo Adepoju - [Continuous deployment for Next.js applications](https://circleci.com/blog/continuous-deployment-for-next-js-apps/)
 - Marcos Henrique da Silva - [Your scaffold for CircleCI + Automated Tests + NestJS](https://makinhs.medium.com/your-scaffold-for-circleci-automated-tests-nestjs-a64f028cdd3d)
+- Calvin Cheng - [Gist: Example deploy using vercel token](https://gist.github.com/calvinchengx/e1b1ab6388cec4f26192414dd9ed7af4)
+- Vercel - [What's the correct way to deploy from another CI system such as circle ci?](https://github.com/vercel/vercel/discussions/7849)

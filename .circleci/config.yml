@@ -1,5 +1,10 @@
 # .circleci/config.yml
 
+defaults: &defaults
+  docker:
+    - image: cimg/node:16.16.0-browsers
+  working_directory: ~/src
+
 version: 2.1
 
 orbs:
@@ -7,12 +12,12 @@ orbs:
 
 jobs:
   build-and-test:
-    docker:
-      - image: cimg/node:16.16.0-browsers
-    working_directory: ~/src
-
+    <<: *defaults
     steps:
       - checkout
+
+      - attach_workspace:
+          at: ~/src
 
       - restore_cache:
           keys:
@@ -21,7 +26,7 @@ jobs:
             - v1-dependency-cache-
 
       - run:
-          name: 🏗️🏗️🏗️ install dependencies 🏗️🏗️🏗️
+          name: 🏗️🏗️🏗️ Install Dependencies 🏗️🏗️🏗️
           command: npm install
 
       - save_cache:
@@ -30,16 +35,36 @@ jobs:
             - ./.next/cache
           key: v1-dependency-cache-{{ checksum "package-lock.json" }}
 
-      - run:
-          name: 🤡🤡🤡 run tests 🤡🤡🤡
-          command: npm run test
+      - persist_to_workspace:
+          root: .
+          paths: .
 
       - run:
-          name: 🔨🔨🔨 build application 🔨🔨🔨
+          name: 🤡🤡🤡 Run Tests 🤡🤡🤡
+          command: npm run test
+
+  deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/src
+
+      - run:
+          name: 🔨🔨🔨 Build Application 🔨🔨🔨
           command: npm run build
+
+      - run:
+          name: 🚀🚀🚀 Deploy to Vercel 🚀🚀🚀
+          command: npx vercel deploy --prod --scope $VERCEL_ORG_ID --token $VERCEL_ACCESS_TOKEN --confirm
 
 # https://circleci.com/docs/configuration-reference#workflows
 workflows:
   build-workflow:
     jobs:
       - build-and-test
+      - deploy:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only: main
