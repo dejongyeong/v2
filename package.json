@@ -20,7 +20,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@headlessui/react": "^1.6.6",
+    "@headlessui/react": "^0.0.0-insiders.04fc6cf",
     "@heroicons/react": "^1.0.6",
     "@testing-library/dom": "^8.16.0",
     "@testing-library/jest-dom": "^5.16.4",
@@ -32,8 +32,9 @@
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
-    "autoprefixer": "^10.4.7",
+    "autoprefixer": "^10.4.14",
     "babel-jest": "^28.1.2",
+    "daisyui": "^3.1.7",
     "eslint": "^8.19.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "12.2.2",

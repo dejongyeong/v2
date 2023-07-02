@@ -1,3 +1,4 @@
+import About from "./About";
 import Intro from "./hero/Intro";
 import Navigation from "./hero/Navigation";
 
@@ -6,8 +7,7 @@ const Hero = () => {
     <div className="bg-white">
       <Navigation />
       <Intro />
-      <Intro />
-      <Intro />
+      <About />
     </div>
   );
 };
