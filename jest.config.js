@@ -14,7 +14,7 @@ module.exports = {
     // handle css imports with css modules
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
     // handle module aliases
-    "^@/components/(.*)$": "./components/$1",
+    "^@/components/(.*)$": "../components/$1",
   },
   setupFilesAfterEnv: ["./jest.setup.js"],
   testPathIgnorePatterns: ["./node_modules/", "./.next/"],
