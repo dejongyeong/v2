@@ -5,19 +5,21 @@ import Image from "next/image";
 
 const Navigation = () => {
   return (
-    <Popover className="sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-sm bg-opacity-50 ps-14 pe-14">
+    <Popover className="sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-sm bg-opacity-50 ps-10 md:ps-14 pe-14">
       <nav>
         <div className="flex flex-row gap-3">
-          <div className="flex-auto md:w-2/12 my-1">
-            <Image src="/logo.png" alt="logo" width={80} height={80} />
+          <div className="flex-auto md:w-2/12 mt-2">
+            <Link href="/">
+              <Image src="/logo.png" alt="logo" width={80} height={80} className="hover:cursor-pointer" />
+            </Link>
           </div>
 
           <div className="flex md:w-8/12">
             <div className="hidden md:flex justify-center items-center gap-12">
-              <Link href="#home">Home</Link>
-              <Link href="#about">About</Link>
-              <Link href="#projects">Projects</Link>
-              <Link href="#contact">Contact</Link>
+              <Link href="/">Home</Link>
+              <Link href="/#about">About</Link>
+              <Link href="/#portfolio">Portfolio</Link>
+              <Link href="/#contact">Contact</Link>
             </div>
           </div>
 
@@ -36,7 +38,7 @@ const Navigation = () => {
             </Popover.Button>
           </div>
 
-          <Popover.Overlay className="md:hidden h-screen fixed inset-0 bg-black opacity-30" />
+          <Popover.Overlay className="md:hidden h-screen fixed inset-0 bg-black opacity-40" />
 
           <Transition
             as={Fragment}
@@ -51,7 +53,9 @@ const Navigation = () => {
               <div className="bg-white shadow-lg rounded-md">
                 <div className="px-7 pt-5 pb-6">
                   <div className="flex items-center justify-between">
-                    <Image src="/logo.png" alt="logo" width={80} height={80} />
+                    <Link href="/">
+                      <Image src="/logo.png" alt="logo" width={80} height={80} className="hover:cursor-pointer" />
+                    </Link>
                     <div>
                       <Popover.Button className="inline-flex items-center justify-center btn-ghost text-gray-400 hover:bg-gray-100 hover:text-gray-500">
                         <span className="sr-only">Close Menu</span>
@@ -70,21 +74,21 @@ const Navigation = () => {
                   </div>
                   <div className="mt-8">
                     <nav className="grid gap-y-8 pl-4">
-                      <Link href="#home">Home</Link>
+                      <Link href="/">Home</Link>
                       <Link
-                        href="#about"
+                        href="/#about"
                         className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"
                       >
                         About
                       </Link>
                       <Link
-                        href="#projects"
+                        href="/#portfolio"
                         className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"
                       >
-                        Projects
+                        Portfolio
                       </Link>
                       <Link
-                        href="#contact"
+                        href="/#contact"
                         className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"
                       >
                         Contact
