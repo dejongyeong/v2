@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const Socials = () => {
   return (
-    <div className="flex flex-row gap-4 ps-8 mt-7 lg:mt-2">
+    <div className="flex flex-row gap-4 ps-10 mt-7 lg:mt-2">
       <div className="flex align-middle">
-        <Link href="https://www.linkedin.com/in/de-jong-yeong/">
+        <Link href="https://www.linkedin.com/in/de-jong-yeong/" passHref>
           <a target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer">
             <Image src="/social/linkedin.svg" alt="LinkedIn" width={18} height={18} />
           </a>
         </Link>
       </div>
       <div className="flex align-middle">
-        <Link href="https://github.com/dejongyeong" target="_blank" passHref className="border-2">
+        <Link href="https://github.com/dejongyeong" passHref>
           <a target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer">
             <Image src="/social/github.svg" alt="Github" width={18} height={18} />
           </a>

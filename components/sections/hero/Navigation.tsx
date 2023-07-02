@@ -2,7 +2,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Download from "@/components/shared/buttons/Download";
+import Download from "../../shared/buttons/Download";
 
 const Navigation = () => {
   return (
@@ -10,8 +10,10 @@ const Navigation = () => {
       <nav>
         <div className="flex flex-row gap-3">
           <div className="flex-auto md:w-2/12 mt-2">
-            <Link href="/">
-              <Image src="/logo.png" alt="logo" width={80} height={80} className="hover:cursor-pointer" />
+            <Link href="/" passHref>
+              <a className="hover:cursor-pointer">
+                <Image src="/logo.png" alt="logo" width={80} height={80} />
+              </a>
             </Link>
           </div>
 
@@ -62,8 +64,10 @@ const Navigation = () => {
               <div className="bg-white shadow-lg rounded-md">
                 <div className="px-7 pt-5 pb-6">
                   <div className="flex items-center justify-between">
-                    <Link href="/">
-                      <Image src="/logo.png" alt="logo" width={80} height={80} className="hover:cursor-pointer" />
+                    <Link href="/" passHref>
+                      <a className="hover:cursor-pointer">
+                        <Image src="/logo.png" alt="logo" width={80} height={80} />
+                      </a>
                     </Link>
                     <div>
                       <Popover.Button className="inline-flex items-center justify-center btn-ghost text-gray-400 hover:bg-gray-100 hover:text-gray-500">

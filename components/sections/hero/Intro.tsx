@@ -1,6 +1,6 @@
-import Cta from "@/components/shared/buttons/Cta";
-import Socials from "@/components/shared/Socials";
 import Image from "next/image";
+import Socials from "../../shared/Socials";
+import Cta from "../../shared/buttons/Cta";
 
 const Intro = () => {
   return (
