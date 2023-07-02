@@ -1,14 +1,18 @@
+import Hero from "@/components/sections/Hero";
+
 import type { NextPage } from "next";
 import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <div className="text-4xl font-bold">
+    <div>
       <Head>
         <title>Portfolio</title>
       </Head>
 
-      <main>hi</main>
+      <main>
+        <Hero />
+      </main>
     </div>
   );
 };
