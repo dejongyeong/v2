@@ -2,6 +2,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Download from "@/components/shared/buttons/Download";
 
 const Navigation = () => {
   return (
@@ -15,11 +16,19 @@ const Navigation = () => {
           </div>
 
           <div className="flex md:w-8/12">
-            <div className="hidden md:flex justify-center items-center gap-12">
-              <Link href="/">Home</Link>
-              <Link href="/#about">About</Link>
-              <Link href="/#portfolio">Portfolio</Link>
-              <Link href="/#contact">Contact</Link>
+            <div className="hidden md:flex justify-center items-center gap-12 text-black">
+              <Link href="/" passHref>
+                <a className="hover:text-title-blue">Home</a>
+              </Link>
+              <Link href="/#about" passHref>
+                <a className="hover:text-title-blue">About</a>
+              </Link>
+              <Link href="/#portfolio" passHref>
+                <a className="hover:text-title-blue">Portfolio</a>
+              </Link>
+              <Link href="/#contact" passHref>
+                <a className="hover:text-title-blue">Contact</a>
+              </Link>
             </div>
           </div>
 
@@ -72,31 +81,24 @@ const Navigation = () => {
                       </Popover.Button>
                     </div>
                   </div>
-                  <div className="mt-8">
-                    <nav className="grid gap-y-8 pl-4">
-                      <Link href="/">Home</Link>
-                      <Link
-                        href="/#about"
-                        className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"
-                      >
-                        About
+                  <div className="mt-12">
+                    <nav className="grid gap-y-8 pl-4 text-black">
+                      <Link href="/" passHref>
+                        <a className="hover:text-title-blue">Home</a>
                       </Link>
-                      <Link
-                        href="/#portfolio"
-                        className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"
-                      >
-                        Portfolio
+                      <Link href="/#about" passHref>
+                        <a className="hover:text-title-blue">About</a>
                       </Link>
-                      <Link
-                        href="/#contact"
-                        className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"
-                      >
-                        Contact
+                      <Link href="/#portfolio" passHref>
+                        <a className="hover:text-title-blue">Portfolio</a>
+                      </Link>
+                      <Link href="/#contact" passHref>
+                        <a className="hover:text-title-blue">Contact</a>
                       </Link>
                     </nav>
                   </div>
-                  <div className="mt-6 flex flex-col items-start pl-4">
-                    <p>Download CV</p>
+                  <div className="mt-11 mb-5 flex flex-col items-start pl-4">
+                    <Download />
                   </div>
                 </div>
               </div>
@@ -105,7 +107,7 @@ const Navigation = () => {
 
           <div className="md:w-2/12 hidden md:flex justify-center items-center">
             <div>
-              <p>Download CV</p>
+              <Download />
             </div>
           </div>
         </div>
