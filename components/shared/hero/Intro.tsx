@@ -30,7 +30,7 @@ const Intro = () => {
           </div>
         </div>
         {/* Right column content */}
-        <div className="p-0 md:flex justify-end items-end">
+        <div className="md:flex justify-end items-end pe-0 min-[1025px]:pe-16">
           <Image
             src="/hero.png"
             alt="Hero Profile Image"
