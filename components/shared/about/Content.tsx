@@ -2,7 +2,7 @@ import Socials from "../Socials";
 
 const Content = () => {
   return (
-    <div className="w-full px-7 md:px-10 py-8 text-gray-600 leading-loose text-base flex flex-col gap-4">
+    <div className="w-full px-7 md:px-10 py-8 text-gray-600 leading-loose text-base flex flex-col justify-center gap-4">
       <p>
         Hey there, fellow tech adventurer! 🚀 Welcome to my virtual playground, where innovation and fun collide! As a
         tech enthusiast raised in <span className="font-medium">Ipoh, Perak, Malaysia</span>, I now find myself
