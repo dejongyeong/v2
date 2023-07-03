@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Socials from "../../shared/Socials";
-import Cta from "../../shared/buttons/Cta";
+import Socials from "../Socials";
+import Cta from "../buttons/Cta";
 
 const Intro = () => {
   return (
@@ -25,7 +25,9 @@ const Intro = () => {
             </div>
             <Cta />
           </div>
-          <Socials />
+          <div className="ps-10">
+            <Socials />
+          </div>
         </div>
         {/* Right column content */}
         <div className="p-0 md:flex justify-end items-end">

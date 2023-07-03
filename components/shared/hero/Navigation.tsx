@@ -2,7 +2,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Download from "../../shared/buttons/Download";
+import Download from "../buttons/Download";
 
 const Navigation = () => {
   return (
@@ -18,7 +18,7 @@ const Navigation = () => {
           </div>
 
           <div className="flex md:w-8/12">
-            <div className="hidden md:flex justify-center items-center gap-12 text-black">
+            <div className="hidden md:flex justify-center items-center gap-12 text-gray-600">
               <Link href="/" passHref>
                 <a className="hover:text-title-blue">Home</a>
               </Link>
@@ -86,7 +86,7 @@ const Navigation = () => {
                     </div>
                   </div>
                   <div className="mt-12">
-                    <nav className="grid gap-y-8 pl-4 text-black">
+                    <nav className="grid gap-y-8 pl-4 text-gray-600">
                       <Link href="/" passHref>
                         <a className="hover:text-title-blue">Home</a>
                       </Link>
