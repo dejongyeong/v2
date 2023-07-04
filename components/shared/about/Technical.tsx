@@ -31,7 +31,8 @@ const Technical = () => {
           />
         </svg>
         <h5 className="mb-2 block text-xl text-blue-700 font-semibold leading-snug antialiased my-4">
-          Technologies and Frameworks <span className="text-xs text-gray-400 font-normal">continuous learning</span>
+          Technologies & Frameworks{" "}
+          <span className="text-xs text-gray-400 font-normal">often used and continuous learning</span>
         </h5>
         <div className=" leading-relaxed antialiased text-gray-500 gap-4 mt-4">
           <div className="grid xl:grid-cols-3 grid-cols-2 gap-4 max-w-full w-auto">
