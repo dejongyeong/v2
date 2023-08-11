@@ -6,7 +6,7 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import { Loader2 } from "lucide-react";
 import toast from "react-hot-toast";
-import { contactSchema } from "lib/validations/contact";
+import { contactSchema } from "../../lib/validations/contact";
 import Socials from "../shared/Socials";
 import Blob from "../shared/contact/Blob";
 
