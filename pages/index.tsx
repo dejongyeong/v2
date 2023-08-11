@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Toaster } from "react-hot-toast";
 import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import Portfolio from "../components/sections/Portfolio";
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="bg-white">
+        <Toaster />
         <Hero />
         <About />
         <Portfolio />

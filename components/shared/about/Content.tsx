@@ -5,10 +5,10 @@ const Content = () => {
     <div className="w-full px-7 md:px-10 py-8 text-gray-600 leading-loose text-base flex flex-col justify-center gap-4">
       <p>
         Hey there, fellow tech adventurer! 🚀 Welcome to my virtual playground, where innovation and fun collide! As a
-        tech enthusiast raised in <span className="font-medium">Ipoh, Perak, Malaysia</span>, I now find myself
-        exploring the lush landscapes of <span className="font-semibold text-blue-700">Ireland</span>, while pursuing my
-        passion for cutting-edge software and AI. With a Master by Research in Engineering, I&apos;ve embarked on an
-        exhilarating journey of discovery, diving deep into the realm of technological innovation.
+        tech enthusiast raised in <span className="font-medium">West Malaysia</span>, I now find myself exploring the
+        lush landscapes of <span className="font-semibold text-blue-700">Ireland</span>, while pursuing my passion for
+        cutting-edge software and AI. With a Master by Research in Engineering, I&apos;ve embarked on an exhilarating
+        journey of discovery, diving deep into the realm of technological innovation.
       </p>
       <p>
         My adventure began at{" "}
@@ -40,7 +40,7 @@ const Content = () => {
         </a>
         . Together, we unveiled the secrets of the digital realm, forging new paths and pushing the boundaries of
         what&apos;s possible 🤖. <span className="font-semibold">Today</span>, you&apos;ll find me at IMaR, wearing my
-        research hat and exploring the art of full-stack development with the brilliant minds at{" "}
+        research hat and exploring the art of smart machines with the brilliant minds at IMaR and{" "}
         <a
           href="https://www.abbeymachinery.com/"
           target="_blank"
@@ -49,8 +49,8 @@ const Content = () => {
         >
           Abbey Machinery
         </a>
-        . But that&apos;s not all! 🎪 I&apos;m also juggling multiple exciting projects, each one adding a new chapter
-        to my quest for knowledge and innovation.
+        . But that&apos;s not all! 🎪 I also work on multiple exciting projects, each one adding a new chapter to my
+        quest for knowledge and innovation.
       </p>
       <p className="visible md:visible">
         When I&apos;m not coding or keeping up with the latest tech trends, you&apos;ll likely catch me engaged in a
