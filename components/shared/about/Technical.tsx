@@ -2,14 +2,17 @@ import React from "react";
 
 const technologies: string[] = [
   "JavaScript (ES6+)",
+  "NextJS",
   "TypeScript",
   "React",
-  "NextJS",
   "Python 3",
-  "SQL & NoSQL",
   "Ant Design",
-  "Material UI",
+  "Shadcn/ui",
   "Git & GitHub",
+  "Drizzle ORM",
+  "Clerk",
+  "Supabase",
+  "PlanetScale",
 ];
 
 const Technical = () => {
@@ -32,7 +35,7 @@ const Technical = () => {
         </svg>
         <h5 className="mb-2 block text-xl text-blue-700 font-semibold leading-snug antialiased my-4">
           Technologies & Frameworks{" "}
-          <span className="text-xs text-gray-400 font-normal">often used and continuous learning</span>
+          <span className="text-xs text-gray-400 font-normal">often used and exploring new frameworks</span>
         </h5>
         <div className=" leading-relaxed antialiased text-gray-500 gap-4 mt-4">
           <div className="grid xl:grid-cols-3 grid-cols-2 gap-4 max-w-full w-auto">

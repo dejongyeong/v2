@@ -11,7 +11,7 @@ const Intro = () => {
           <div className="flex flex-col justify-center gap-8 mx-auto ps-9 font-sans h-full">
             <div className="flex flex-col">
               <div className="flex flex-col">
-                <h4 className="text-sm font-medium text-title-blue">Hello World 👋, I am</h4>
+                <h4 className="text-sm font-medium text-title-blue">Hello World 👋, I am DJ</h4>
                 <h1 className="text-7xl font-bold tracking-wide text-black my-2 uppercase">Y. De Jong</h1>
                 <p className="text-xl font-medium">Postgraduate Researcher, Software Engineer</p>
               </div>
