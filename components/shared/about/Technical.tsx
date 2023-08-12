@@ -38,7 +38,7 @@ const Technical = () => {
           <span className="text-xs text-gray-400 font-normal">often used and exploring new frameworks</span>
         </h5>
         <div className=" leading-relaxed antialiased text-gray-500 gap-4 mt-4">
-          <div className="grid xl:grid-cols-3 grid-cols-2 gap-4 max-w-full w-auto">
+          <div className="grid xl:grid-cols-3 grid-cols-2 gap-4 max-w-full w-auto text-sm">
             {technologies.map((technology: string) => {
               return (
                 <p key={technology} className="hover:text-blue-600">

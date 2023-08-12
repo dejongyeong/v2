@@ -2,7 +2,7 @@ import Socials from "../Socials";
 
 const Content = () => {
   return (
-    <div className="w-full px-7 md:px-10 py-10 md:py-8 text-gray-600 leading-loose text-base flex flex-col justify-start gap-4">
+    <div className="w-full px-7 md:px-10 py-10 md:py-8 text-gray-600 leading-loose text-sm flex flex-col justify-start gap-4">
       <p>
         Hey there, fellow tech adventurer! 🚀 Welcome to my virtual playground, where innovation and fun collide! As a
         tech enthusiast raised in <span className="font-medium">West Malaysia</span>, I now find myself exploring the
@@ -49,13 +49,8 @@ const Content = () => {
         >
           Abbey Machinery
         </a>
-        . But that&apos;s not all! 🎪 I also work on multiple exciting projects, each one adding a new chapter to my
+        . I also working on multiple exciting projects, exploring new frameworks, each one adding a new chapter to my
         quest for knowledge and innovation.
-      </p>
-      <p className="visible md:visible">
-        When I&apos;m not coding or keeping up with the latest tech trends, you&apos;ll likely catch me engaged in a
-        thrilling game of chess or enjoying online games with friends. It&apos;s the perfect way to boost teamwork,
-        unwind, de-stress, and sharpen the mind.
       </p>
       <p className="mb-5">
         So, grab your virtual gear and join me on this exhilarating ride. Let&apos;s geek out, have a blast, and make

@@ -32,7 +32,7 @@ const EI = () => {
           Soft Skills <span className="text-xs text-gray-400 font-normal">personality traits</span>
         </h5>
         <div className="leading-relaxed antialiased text-gray-500 gap-4 mt-4">
-          <div className="grid xl:grid-cols-3 grid-cols-2 gap-4 max-w-full w-auto">
+          <div className="grid xl:grid-cols-3 grid-cols-2 gap-4 max-w-full w-auto text-sm">
             {softs.map((soft: string) => {
               return (
                 <p key={soft} className="hover:text-blue-600">

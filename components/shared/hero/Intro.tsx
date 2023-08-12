@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MouseEvent } from "react";
 import Socials from "../Socials";
 import Cta from "../buttons/Cta";
 
@@ -30,7 +31,12 @@ const Intro = () => {
           </div>
         </div>
         {/* Right column content */}
-        <div className="md:flex justify-center items-end pe-4 min-[1025px]:pe-16 max-[1025px]:mt-7">
+        <div
+          className="md:flex justify-center items-end pe-4 min-[1025px]:pe-16 max-[1025px]:mt-7"
+          onContextMenu={(event: MouseEvent<HTMLDivElement>) => {
+            event.preventDefault();
+          }}
+        >
           <Image
             src="/hero.png"
             alt="Hero Profile Image"
