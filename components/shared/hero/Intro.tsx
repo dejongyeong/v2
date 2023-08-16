@@ -8,8 +8,8 @@ const Intro = () => {
     <div id="home" className="h-max">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {/* Left column content */}
-        <div className="ps-0 min-[1025px]:ps-64 py-10 w-full h-full">
-          <div className="flex flex-col justify-center gap-8 mx-auto ps-9 font-sans h-full">
+        <div className="ps-0 min-[1025px]:ps-56 py-10 w-full h-full">
+          <div className="flex flex-col justify-center gap-8 mx-auto ps-9 font-sans h-full mb-5 lg:mb-7">
             <div className="flex flex-col">
               <div className="flex flex-col">
                 <h4 className="text-sm font-medium text-title-blue">Hello World 👋, I am DJ</h4>

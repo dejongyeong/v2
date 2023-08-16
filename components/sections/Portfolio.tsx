@@ -58,7 +58,7 @@ const Portfolio = () => {
               </a>
             </Link>
           </div>
-          <div className="my-7 max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-7 p-6">
+          <div className="my-7 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-7 p-6">
             {portfolios.map((portfolio: Portfolios) => (
               <PortfolioCard key={portfolio.title} portfolio={portfolio} />
             ))}
