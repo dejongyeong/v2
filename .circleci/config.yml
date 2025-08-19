@@ -14,16 +14,7 @@ jobs:
   build-and-test:
     <<: *defaults
     steps:
-      # Using manual HTTPS clone to avoid SSH key issues. Public repos don't require auth via HTTPS.
-      # If you prefer SSH (private repo / pushing), replace this block with: `- add_ssh_keys: { fingerprints: ["<fingerprint>"] }` then `- checkout`.
-      - run:
-          name: Clone repository (HTTPS)
-          command: |
-            if [ ! -d .git ]; then
-              git clone https://github.com/dejongyeong/v2.git .
-            else
-              echo "Repository already present"
-            fi
+      - checkout
 
       - attach_workspace:
           at: ~/src
