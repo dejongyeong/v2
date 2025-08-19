@@ -55,7 +55,7 @@ jobs:
 
       - run:
           name: 🚀🚀🚀 Deploy to Vercel 🚀🚀🚀
-          command: npx vercel deploy --prod --scope $VERCEL_TEAM_SLUG --token $VERCEL_ACCESS_TOKEN --confirm
+          command: npx vercel deploy --prod --scope $VERCEL_TEAM_SLUG --token $VERCEL_ACCESS_TOKEN --yes
 
 # https://circleci.com/docs/configuration-reference#workflows
 workflows:
