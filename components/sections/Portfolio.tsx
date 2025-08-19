@@ -6,7 +6,7 @@ const PortfolioCard = ({ portfolio }: { portfolio: Portfolios }) => {
   return (
     <div className="card w-fit card-compact card-bordered border-gray-200 shadow-md rounded-2xl overflow-hidden h-auto">
       <figure className="border-b relative">
-        <Image src={portfolio.image} width={1891} height={975} />
+        <Image src={portfolio.image} width={1891} height={975} alt="Portfolio Image" />
         <div className="absolute inset-0 bg-blue-600/10 backdrop-brightness-75" />
       </figure>
       <div className="card-body bg-white text-black">
