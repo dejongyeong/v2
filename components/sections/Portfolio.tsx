@@ -25,17 +25,23 @@ const PortfolioCard = ({ portfolio }: { portfolio: Portfolios }) => {
         <div className="divider" />
         <div className="card-actions justify-end">
           {portfolio.preview && (
-            <Link href={portfolio.preview} passHref target="_blank" rel="noopener noreferrer">
-              <a className="inline-block px-5 py-1 text-white bg-blue-600 rounded-full hover:bg-blue-700 hover:drop-shadow-lg md:mx-0 text-sm">
-                Preview
-              </a>
+            <Link
+              href={portfolio.preview}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-1 text-white bg-blue-600 rounded-full hover:bg-blue-700 hover:drop-shadow-lg md:mx-0 text-sm"
+            >
+              Preview
             </Link>
           )}
           {portfolio.github && (
-            <Link href={portfolio.github} passHref target="_blank" rel="noopener noreferrer">
-              <a className="inline-block px-5 py-1 text-white bg-blue-600 rounded-full hover:bg-blue-700 hover:drop-shadow-lg md:mx-0 text-sm">
-                Github
-              </a>
+            <Link
+              href={portfolio.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-1 text-white bg-blue-600 rounded-full hover:bg-blue-700 hover:drop-shadow-lg md:mx-0 text-sm"
+            >
+              Github
             </Link>
           )}
         </div>
@@ -52,10 +58,13 @@ const Portfolio = () => {
           <div className="divider text-4xl md:text-5xl text-title-blue font-extrabold uppercase">Portfolio</div>
           <h3 className="pt-3 pb-6 text-sm">more projects coming soon and publications available in resume</h3>
           <div className="my-4">
-            <Link href="https://github.com/dejongyeong" passHref target="_blank" rel="noopener noreferrer">
-              <a className="inline-block px-5 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 hover:drop-shadow-lg md:mx-0">
-                View Full Archive
-              </a>
+            <Link
+              href="https://github.com/dejongyeong"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 hover:drop-shadow-lg md:mx-0"
+            >
+              View Full Archive
             </Link>
           </div>
           <div className="my-7 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-7 p-6">

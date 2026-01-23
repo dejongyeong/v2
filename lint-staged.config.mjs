@@ -1,8 +1,10 @@
-module.exports = {
-  // check all typescript files
+// lint-staged.config.mjs
+
+export default {
+  // check all TypeScript files
   "**/*.(ts|tsx)": () => "npx tsc --noEmit",
 
-  // lint and format typescript and run tests
+  // lint and format TypeScript / JavaScript
   "**/*.(ts|js)?(x)": filenames => [
     `npx eslint --fix ${filenames.join(" ")}`,
     `npx prettier --write ${filenames.join(" ")}`,

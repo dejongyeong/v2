@@ -10,26 +10,24 @@ const Navigation = () => {
       <nav>
         <div className="flex flex-row gap-3">
           <div className="flex-auto md:w-2/12 mt-2">
-            <Link href="/" passHref>
-              <a className="hover:cursor-pointer">
-                <Image src="/logo.png" alt="logo" width={80} height={80} />
-              </a>
+            <Link href="/" className="hover:cursor-pointer">
+              <Image src="/logo.png" alt="logo" width={80} height={80} />
             </Link>
           </div>
 
           <div className="flex md:w-8/12">
             <div className="hidden md:flex justify-center items-center gap-12 text-gray-600">
-              <Link href="/" passHref>
-                <a className="hover:text-title-blue">Home</a>
+              <Link href="/" className="hover:text-title-blue">
+                Home
               </Link>
-              <Link href="/#about" passHref>
-                <a className="hover:text-title-blue">About</a>
+              <Link href="/#about" className="hover:text-title-blue">
+                About
               </Link>
-              <Link href="/#portfolio" passHref>
-                <a className="hover:text-title-blue">Portfolio</a>
+              <Link href="/#portfolio" className="hover:text-title-blue">
+                Portfolio
               </Link>
-              <Link href="/#contact" passHref>
-                <a className="hover:text-title-blue">Contact</a>
+              <Link href="/#contact" className="hover:text-title-blue">
+                Contact
               </Link>
             </div>
           </div>
@@ -64,10 +62,8 @@ const Navigation = () => {
               <div className="bg-white shadow-lg rounded-md">
                 <div className="px-7 pt-5 pb-6">
                   <div className="flex items-center justify-between">
-                    <Link href="/" passHref>
-                      <a className="hover:cursor-pointer">
-                        <Image src="/logo.png" alt="logo" width={80} height={80} />
-                      </a>
+                    <Link href="/" className="hover:cursor-pointer">
+                      <Image src="/logo.png" alt="logo" width={80} height={80} />
                     </Link>
                     <div>
                       <Popover.Button className="inline-flex items-center justify-center btn-ghost text-gray-400 hover:bg-gray-100 hover:text-gray-500">
@@ -87,17 +83,17 @@ const Navigation = () => {
                   </div>
                   <div className="mt-12">
                     <nav className="grid gap-y-8 pl-4 text-gray-600">
-                      <Link href="/" passHref>
-                        <a className="hover:text-title-blue">Home</a>
+                      <Link href="/" className="hover:text-title-blue">
+                        Home
                       </Link>
-                      <Link href="/#about" passHref>
-                        <a className="hover:text-title-blue">About</a>
+                      <Link href="/#about" className="hover:text-title-blue">
+                        About
                       </Link>
-                      <Link href="/#portfolio" passHref>
-                        <a className="hover:text-title-blue">Portfolio</a>
+                      <Link href="/#portfolio" className="hover:text-title-blue">
+                        Portfolio
                       </Link>
-                      <Link href="/#contact" passHref>
-                        <a className="hover:text-title-blue">Contact</a>
+                      <Link href="/#contact" className="hover:text-title-blue">
+                        Contact
                       </Link>
                     </nav>
                   </div>

@@ -1,4 +1,7 @@
-module.exports = {
+// jest.config.mjs
+
+/** @type {import('jest').Config} */
+const config = {
   collectCoverage: true,
   coverageProvider: "v8",
   collectCoverageFrom: [
@@ -14,10 +17,10 @@ module.exports = {
     // handle css imports with css modules
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
     // handle module aliases
-    "^@/components/(.*)$": "./components/$1",
+    "^@/components/(.*)$": "<rootDir>/components/$1",
   },
   setupFilesAfterEnv: ["./jest.setup.js"],
-  testPathIgnorePatterns: ["./node_modules/", "./.next/"],
+  testPathIgnorePatterns: ["/node_modules/", "/.next/"],
   testEnvironment: "jsdom",
   transform: {
     // use babel-jest to transpile tests with the next/babel preset
@@ -25,3 +28,5 @@ module.exports = {
   },
   transformIgnorePatterns: ["/node_modules/", "^.+\\.module\\.(css|sass|scss)$"],
 };
+
+export default config;
